@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      hello frontend dosto
+      hello frontend dosto kya hal hai
     </>
   )
 }
