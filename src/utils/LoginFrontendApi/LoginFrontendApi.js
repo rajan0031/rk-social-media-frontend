@@ -5,4 +5,4 @@ export const host = 'https://project-x-backend-psc5.onrender.com';
 
 // api routes for the registration of a user bro
 
-export const registerRoute = `${host}/register`;
+export const loginRoutes = `${host}/login`;
