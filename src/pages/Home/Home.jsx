@@ -1,7 +1,20 @@
 // src/components/Home.jsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+
+    const navigate = useNavigate();
+
+    const handleLogin = () => {
+        navigate("/login")
+    }
+
+    const hanldesignup = () => {
+        navigate("/signup")
+    }
+
+
     return (
         <div>
             {/* Navigation Bar */}
@@ -13,8 +26,9 @@ function Home() {
                     <div>
                         <a href="#" className="text-white px-4">Home</a>
                         <a href="#" className="text-white px-4">About</a>
-                        <a href="#" className="text-white px-4">Services</a>
-                        <a href="#" className="text-white px-4">Contact</a>
+                        <a onClick={handleLogin}
+                            className="text-white px-4">login</a>
+                        <a onClick={hanldesignup} className="text-white px-4">Signup</a>
                     </div>
                 </div>
             </nav>
