@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { registerRoute } from '../utils/SignupFrontEndApi/SignupFrontEndApi';
+import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
     const [form, setForm] = useState({
@@ -8,6 +9,9 @@ const Signup = () => {
         email: '',
         password: '',
     });
+
+    const navigate = useNavigate();
+
 
     const handleChange = (e) => {
         setForm({
@@ -29,7 +33,9 @@ const Signup = () => {
                 email: form.email,
                 password: form.password,
             });
-            console.log(response);
+            if (response) {
+                navigate("/login");
+            }
         } catch (err) {
             console.log(err)
         }
