@@ -1,7 +1,7 @@
 // src/components/Login.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
-import { loginRoutes } from '../utils/LoginFrontendApi/LoginFrontendApi';
+import { loginRoutes } from '../../utils/LoginFrontendApi/LoginFrontendApi';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {

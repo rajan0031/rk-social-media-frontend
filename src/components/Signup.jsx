@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { registerRoute } from '../utils/SignupFrontEndApi/SignupFrontEndApi';
+import { registerRoute } from '../../utils/SignupFrontEndApi/SignupFrontEndApi';
 import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
